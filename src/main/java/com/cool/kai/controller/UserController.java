@@ -23,6 +23,8 @@ public class UserController {
     @Autowired
     private RedisUtils redisUtils;
 
+
+
     @GetMapping("/getUsers")
     @ResponseBody
     public PageInfo<User> pageInfoUser(@RequestParam(name ="pageNum") int pageNum,
